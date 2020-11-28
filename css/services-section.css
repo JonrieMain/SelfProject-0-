@@ -1,0 +1,55 @@
+.main .services-section {
+display: grid;
+height: 100%;
+width:100%;
+grid-template-columns: 1fr;
+grid-template-rows: 5rem repeat(3, 1fr);
+grid-template-areas:
+"text"
+"msg1"
+"msg2"
+"msg3";
+padding: 1rem;
+}
+.main .services-section h1:nth-child(1){
+grid-area: text;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.main .services-section p:nth-child(2){
+grid-area: msg1;
+color:#000;
+background:#e6e6e6;
+padding: 1rem;
+transition:1s ease;
+}
+.main .services-section p:nth-child(3){
+grid-area: msg2;
+color:#000;
+background:#e6e6e6;
+padding: 1rem;
+transition:1s ease;
+}
+.main .services-section p:nth-child(4){
+grid-area: msg3;
+color:#000;
+background:#e6e6e6;
+padding: 1rem;
+transition:1s ease;
+}
+.main .services-section .html{
+grid-area: html;
+padding: 1rem;
+}
+.main .services-section .css{
+grid-area: css;
+padding: 1rem;
+}
+
+.main .services-section p:nth-child(2):hover,
+.main .services-section p:nth-child(3):hover,
+.main .services-section p:nth-child(4):hover{
+background: teal;
+cursor: pointer;
+}

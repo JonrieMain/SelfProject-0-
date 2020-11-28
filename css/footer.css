@@ -1,0 +1,11 @@
+.main .footer {
+height: 90px;
+width:100%;
+background: teal;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+.main .footer{
+	color: #fff;
+}
